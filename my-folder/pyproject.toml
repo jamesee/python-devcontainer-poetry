@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "mypackage"
+version = "1.0.0"
+description = ""
+authors = ["James Ee <james.ee.sg@gmail.com>"]
+readme = "README.md"
+packages = [{include = "main", from = "src"}, 
+            {include = "package1", from = "src"}, 
+            {include = "package2", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+mycli = "main:main"
