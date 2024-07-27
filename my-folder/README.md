@@ -1,3 +1,4 @@
+poetry new my-folder --src --name package1
 
 python src
 
