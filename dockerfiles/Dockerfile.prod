@@ -32,9 +32,6 @@ COPY . .
 RUN poetry build && \
     poetry install --only-root
 
-# Delete mypackages source code
-RUN rm -rf /app/mypackages
-
 # Run the application
 ENTRYPOINT ["poetry", "run"]
 CMD ["mycli"]
