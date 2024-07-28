@@ -1,10 +1,10 @@
 [tool.poetry]
-name = "mypackage"
+name = "mypackages"
 version = "1.0.0"
 description = ""
 authors = ["James Ee <james.ee.sg@gmail.com>"]
 readme = "README.md"
-packages = [{include = "main", from = "src"}, 
+packages = [{include = "cli", from = "src"}, 
             {include = "package1", from = "src"}, 
             {include = "package2", from = "src"}]
 
@@ -16,4 +16,4 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
-mycli = "main:main"
+mycli = "cli:main"
