@@ -6,7 +6,7 @@ services:
       dockerfile: Dockerfile.dev
     volumes:
       - ../..:/workspaces:cached
-      - ~/.ssh:/workspaces/.ssh      
+      - ~/.ssh:/root/.ssh      
     # network_mode: service:db
     command: sleep infinity
 
