@@ -10,6 +10,8 @@ poetry run mycli
 
 poetry run python src
 
+poetry run pytest tests
+
 # Build production docker container
 docker build -f ../dockerfiles/Dockerfile.prod -t mytest:prod .
 
