@@ -1,6 +1,6 @@
 from unittest.mock import Mock
-from src.shopping_cart import ItemDatabase
-from src.shopping_cart import ShoppingCart
+from shopping_cart import ItemDatabase
+from shopping_cart import ShoppingCart
 import pytest
 
 
